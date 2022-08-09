@@ -1,0 +1,34 @@
+#
+#. This config file adds support for Netlify CMS, exposed at /admin on the running site.
+# In order to use this on your site,
+#. 1) replace instances of "exampleSite/......" with the appropriate paths, relative from repository root.
+#. 2) replace repo path in `backend` settings, and set branch to master.
+#  3) Optionally enable the [editor workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode) which uses PRs for content changes
+#  4) Optionally enable [open authoring](https://www.netlifycms.org/docs/open-authoring/) for community sites, which requires #3
+#  
+#
+locale: 'de'
+
+
+backend:
+  name: git-gateway
+  # repo: grasgruenit/devweb
+  branch: main
+
+
+media_folder: "content/posts/img" # Folder where user uploaded files should go
+public_folder: "/posts/img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Inhalte" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Orientation", name: "orient", widget: "string"}
+      - {label: "Imagepos", name: "imagepos", widget: "string"}
+      - {label: "Style", name: "style", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
