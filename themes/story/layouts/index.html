@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Hugo Story by CaressOfSteel
+	A (modular, highly tweakable) responsive one-page theme for Hugo.
+	Ported from Story by HTML5UP.
+	This Hugo theme is licensed under the Creative Commons Attribution 3.0 License.
+-->
+<html style="scroll-behavior: smooth !important;">
+	
+	{{ partial "template/head" . }}
+
+
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+
+		<!-- Banner -->
+		<section class="banner style2 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				
+				<a href="../" title="Startseite" ><img src="logo.jpg" alt="Logo TauchAb" style="max-width:250px;"></a>
+				<br>
+				
+				<br>
+				{{ with .Site.Title }}<h1>{{.}}</h1>{{end}}
+				{{ with .Site.Params.subtitle }}<p class="major">{{.}}</p>{{end}}
+				
+				<p>Die Tauchschule geleitet von Tobias und Stefan. Wir bieten Ausbildung für tauchbegeisterte mit oder ohne Vorerfahrung, spezielle Tauchausflüge und spannende Kindergeburtstage unter Wasser. </p>
+
+				<ul class="actions stacked">
+					<li><a href="#Wer wir sind" class="button large wide smooth-scroll-middle icon fa-arrow-down">scroll</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="banner.jpg" alt="" />
+			</div>
+		</section>
+	
+	{{ range (where .Site.Pages "Section" "posts") }}
+		{{ range sort .Pages "File.Path" }}
+
+			<section class="spotlight {{ .Params.style }} orient-{{ .Params.orient }} content-align-left image-position-{{ .Params.imagepos }} " id="{{ .Name }}">
+				<div class="content">
+					<h2>{{ .Title }}</h2>
+					<p>{{ .Content }}</p>
+					
+				</div>
+				<div class="image">
+					<img src="posts/img/{{ .Params.image }}.jpg" alt="" />
+				</div>
+			</section>
+		{{ end }}
+	{{ end }}
+
+<section class="wrapper style1 align-center">
+                    <div class="inner">
+                        <div class="index align-left">
+
+                                <section>
+                                    <header>
+                                        <h2>Kontakt</h2>
+                                    </header>
+                                    <div class="content">
+
+                                        <form method="post" action="https://forms.un-static.com/forms/9ce503df5f0cdd2a2529345ce86e8d993fa79a62">
+                                            <div class="fields">
+                                                <div class="field half">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name" id="name" value="" />
+                                                </div>
+                                                <div class="field half">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" name="email" id="email" value="" />
+                                                </div>
+                                                <div class="field">
+                                                    <label for="message">Nachricht</label>
+                                                    <textarea name="message" id="message" rows="6"></textarea>
+                                                </div>
+                                                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                                            </div>
+                                            <ul class="actions">
+                                                <li><input type="submit" name="submit" id="submit" value="Absenden" /></li>
+                                            </ul>
+                                        </form>
+
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LcC2PAgAAAAADPudrEPkmaOtr8eT1TiZtMj9PDC"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LcC2PAgAAAAADPudrEPkmaOtr8eT1TiZtMj9PDC', {action: 'login'}).then(function(token) {
+       document.getElementById('g-recaptcha-response').value = token;
+    });
+});
+</script>
+
+                                    </div>
+                                </section>
+                        </div>
+                    </div>
+				</section>
+				
+	<section class="banner style1">
+		<div class="image">
+			<img src="kontakt.jpg">
+		</div>
+		
+		<div class="content">
+			<div class="box">
+			
+			<p>				
+			<b>Tobias (Tobi) Hauer</b> und <b>Stefan (Steve) Kopf</b></p>
+			
+			<a href="mailto:ausbildung@tauch-ab.at" class="icon fa-envelope"> &nbsp; ausbildung@tauch-ab.at</a><br>
+			<a href="tel:+4367763068066" class="icon fa-mobile"> &nbsp; +43 677 630 680 66 (Steve)</a><br>
+			<a href="tel:+4367761728189" class="icon fa-mobile"> &nbsp; +43 677 617 281 89 (Tobi)</a><br>
+			
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+		{{ partial "template/footer" . }}
+
+		</div>
+		
+		{{ template "_internal/google_analytics.html" . }}
+		{{ partial "template/scripts" . }}
+
+	</body>
+</html>

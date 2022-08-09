@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html>
+	<a href="/" style="position:absolute;top:20px;right:20px;z-index:10;" class="button icon solid fa-chevron-left">Zurück</a>
+	
+	{{ partial "template/head" . }}
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div style="margin:20px">
+          <h1>{{ .Title }}</h1>
+
+		  {{ .Content }}
+
+	    </div>
+		
+		{{ template "_internal/google_analytics.html" . }}
+		{{ partial "template/scripts" . }}
+		<a href="/" style="float:right;margin:20px;" class="button icon solid fa-chevron-left">Zurück</a>
+
+	</body>
+</html>

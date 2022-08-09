@@ -1,0 +1,12 @@
+baseURL = "https://tauch-ab.at"
+languageCode = "de-de"
+title = "Tauch Ab"
+theme = "story"
+
+[params]
+subtitle = "mit leidenschaftlichen Tauchlehrern"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

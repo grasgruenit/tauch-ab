@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	{{ partial "template/head" . }}
+
+	<body class="is-preload">
+		<a href="/#{{ .Section }}" style="position:absolute;top:10px;right:20px;z-index:10;background:white;" class="button icon solid fa-chevron-left">Zurück</a>
+		  
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+          {{ range sort (where .Data.Pages "Section" .Section ) "File.Path" }}
+
+			<section class="spotlight {{ .Params.style }} orient-{{ .Params.orient }} content-align-left image-position-{{ .Params.imagepos }} onscroll-image-fade-in">
+				<div class="content">
+					{{ if isset .Params "maintitle" }}<h1>{{ .Params.maintitle }}</h1>{{ end }}
+					{{ if isset .Params "title" }}<h2>{{ .Title }}</h2>{{ end }}
+					<p>{{ .Content }}</p>
+				</div>
+				<div class="image">
+					<img src="{{ .Params.image }}.jpg" alt="" />
+				</div>
+			</section>
+		<!-- Wrapper -->
+          {{ end }}
+	    </div>
+		
+		{{ template "_internal/google_analytics.html" . }}
+		{{ partial "template/scripts" . }}
+
+		<a href="/#{{ .Section }}" style="float:right;margin:20px;" class="button icon solid fa-chevron-left">Zurück</a>
+
+	</body>
+</html>
