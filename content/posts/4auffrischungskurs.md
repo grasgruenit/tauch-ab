@@ -1,6 +1,6 @@
 ---
 title: Auffrischungskurs
-image: ausbildung1
+image: /posts/img/ausbildung1.jpg
 orient: left
 imagepos: center
 style: style2
