@@ -1,10 +1,10 @@
 ---
 title: Kindertauchkurse
 image: /posts/img/kindergeburtstag.jpg
+weight: 60
 orient: left
 imagepos: center
 style: style1
-
 ---
 Früh übt sich, wer ein Meister werden will. Bereits ab 8 Jahren können Kinder das Tauchen erlernen. Ob es ein erstes Kennenlernen beim [Bubblemaker](https://www.padi.com/de/kurse/bubblemaker) oder das Absolvieren der AquaMissions für das [PADI Seal Team](https://www.padi.com/de/kurse/seal-team) ist. 
 
