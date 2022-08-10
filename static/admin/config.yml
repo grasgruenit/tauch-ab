@@ -49,8 +49,4 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hidden", name: "hidden", widget: "boolean"}
           - {label: "Inhalt", name: "body", widget: "markdown"}
-      - label: "Startseite"
-        name: "index"
-        file: "/themes/story/layouts/index.html"
-        fields: # The fields each document in this collection have
-          - {label: "Inhalt", name: "body", widget: "code"}
+
