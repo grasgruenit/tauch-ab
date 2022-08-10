@@ -1,6 +1,6 @@
 ---
 title: Wir wollen
-image: waswirwollen
+image: /posts/img/waswirwollen.jpg
 orient: left
 imagepos: left
 style: style1
