@@ -1,6 +1,6 @@
 ---
 title: Kindertauchkurse
-image: kindergeburtstag
+image: /posts/img/kindergeburtstag.jpg
 orient: left
 imagepos: center
 style: style1
