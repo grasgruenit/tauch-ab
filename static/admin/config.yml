@@ -32,3 +32,25 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Imagepos", name: "imagepos", widget: "string"}
       - {label: "Style", name: "style", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Einzelseiten"
+    name: "single"
+    files: 
+      - label: "Danke"
+        name: "danke"
+        file: "/content/danke.md"
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hidden", name: "hidden", widget: "string"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+      - label: "Datenschutz"
+        name: "datenschutz"
+        file: "/content/datenschutz.md"
+        fields: # The fields each document in this collection have
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hidden", name: "hidden", widget: "string"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+      - label: "Startseite"
+        name: "index"
+        file: "/themes/story/layouts/index.html"
+        fields: # The fields each document in this collection have
+          - {label: "Inhalt", name: "body", widget: "html"}
