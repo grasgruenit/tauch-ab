@@ -1,6 +1,6 @@
 ---
 title: Wer wir sind
-image: /posts/img/ausbildung.jpg
+image: /posts/img/stevetobi.jpg
 orient: right
 imagepos: center
 style: style2
