@@ -53,4 +53,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "index"
         file: "/themes/story/layouts/index.html"
         fields: # The fields each document in this collection have
-          - {label: "Inhalt", name: "body", widget: "code", default_language: "HTML"}
+          - {label: "Inhalt", name: "body", widget: "code"}
