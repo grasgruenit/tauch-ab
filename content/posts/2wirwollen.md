@@ -1,10 +1,10 @@
 ---
 title: Wir wollen
 image: /posts/img/waswirwollen.jpg
+weight: 1
 orient: left
 imagepos: left
 style: style1
-
 ---
 … neue Taucher bei ihren ersten Atemzügen unter Wasser begleiten und bereits brevetierte Taucher weiterbilden.  
 … die Begeisterung für die Unterwasserwelt und den Tauchsport in den heimischen Gewässern, sowie in den Meeren der Welt wecken und fördern.  
