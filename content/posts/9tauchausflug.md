@@ -1,6 +1,6 @@
 ---
 title: Tauchausflug
-image: tauchausflug
+image: /posts/img/tauchausflug.jpg
 orient: right
 imagepos: center
 style: style1
