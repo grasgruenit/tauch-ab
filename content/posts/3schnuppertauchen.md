@@ -1,6 +1,6 @@
 ---
 title: Schnuppertauchen
-image: schnuppertauchen
+image: /posts/img/schnuppertauchen.jpg
 orient: right
 imagepos: center
 style: style1
