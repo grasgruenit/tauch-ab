@@ -1,6 +1,6 @@
 ---
 title: Tauchkurse
-image: ausbildung
+image: /posts/img/ausbildung.jpg
 orient: right
 imagepos: center
 style: style2
