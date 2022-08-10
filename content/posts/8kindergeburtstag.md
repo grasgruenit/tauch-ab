@@ -1,6 +1,6 @@
 ---
 title: Kindergeburtstag im eigenen Pool
-image: kindergeburtstag_2
+image: /posts/img/kindergeburtstag_2.jpg
 orient: left
 imagepos: center
 style: style1
