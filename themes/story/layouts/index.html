@@ -39,7 +39,7 @@
 		</section>
 	
 	{{ range (where .Site.Pages "Section" "posts") }}
-		{{ range sort .Pages.ByWeight "File.Path" }}
+		{{ range .Pages }}
 
 			<section class="spotlight {{ .Params.style }} orient-{{ .Params.orient }} content-align-left image-position-{{ .Params.imagepos }} " id="{{ .Name }}">
 				<div class="content">
