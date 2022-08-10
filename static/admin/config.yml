@@ -28,6 +28,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
+      - {label: "Reihenfolge", name: "weight", widget: "number"}
       - {label: "Orientation", name: "orient", widget: "string"}
       - {label: "Imagepos", name: "imagepos", widget: "string"}
       - {label: "Style", name: "style", widget: "string"}
