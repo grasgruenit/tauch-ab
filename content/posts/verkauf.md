@@ -1,6 +1,6 @@
 ---
 title: Verkauf und Verleih
-image: ausruestung
+image: /posts/img/ausruestung.jpg
 orient: left
 imagepos: center
 style: style2
