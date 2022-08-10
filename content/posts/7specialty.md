@@ -1,6 +1,6 @@
 ---
 title: Specialty Kurse
-image: specialty_1
+image: /posts/img/specialty_1.jpg
 orient: right
 imagepos: center
 style: style1
