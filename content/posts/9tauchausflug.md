@@ -1,10 +1,10 @@
 ---
 title: Tauchausflug
 image: /posts/img/tauchausflug.jpg
+weight: 90
 orient: right
 imagepos: center
 style: style1
-
 ---
 Du und deine Freunde haben Lust auf einen Tages- oder Wochenendtripp und seid bereits brevetierte Taucher?
 
