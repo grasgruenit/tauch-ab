@@ -1,7 +1,7 @@
 ---
 title: Wir wollen
 image: /posts/img/waswirwollen.jpg
-weight: 1
+weight: 20
 orient: left
 imagepos: left
 style: style1
