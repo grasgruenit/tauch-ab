@@ -64,8 +64,11 @@
                                     </header>
                                     <div class="content">
 
-                                        <form method="post" action="https://forms.un-static.com/forms/9ce503df5f0cdd2a2529345ce86e8d993fa79a62">
-                                            <div class="fields">
+                                        <form method="post" action="https://api.staticforms.xyz/submit">
+                                            <input type="hidden" name="accessKey" value="fbabcdfd-475c-426c-8390-90cbdaa8d39e">
+											<input type="hidden" name="subject" value="Tauch-Ab.at Anfrage">
+											<input type="hidden" name="redirectTo" value="https://www.tauch-ab.at/danke/">
+											<div class="fields">
                                                 <div class="field half">
                                                     <label for="name">Name</label>
                                                     <input type="text" name="name" id="name" value="" />
@@ -73,6 +76,7 @@
                                                 <div class="field half">
                                                     <label for="email">Email</label>
                                                     <input type="email" name="email" id="email" value="" />
+													<input type="hidden" name="replyTo" value="@">
                                                 </div>
                                                 <div class="field">
                                                     <label for="message">Nachricht</label>
